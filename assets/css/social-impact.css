@@ -1,0 +1,503 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #e7e6e3;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1em;
+    font-family: 'Mark Pro', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+::selection {
+    color: #e7e6e3;
+    background: #d1363a;
+    text-shadow: none;
+}
+
+p,
+h1,
+h2,
+h3,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.portada {
+    position: relative;
+    width: 100vw;
+    /* Ancho completo del viewport */
+    height: 70vh;
+    /* 70% del viewport */
+    background: #252423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.img-portada {
+    background-image: url("../img/impact/Portada.jpeg");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+}
+
+.content-portada {
+    position: relative;
+    z-index: 2;
+    color: #e7e6e3;
+    text-align: center;
+    max-width: 600px;
+    transition: transform 0.5s ease;
+}
+
+/* Efecto al pasar el mouse sobre la imagen */
+.portada:hover .content-portada {
+    transform: scale(1.175);
+    /* Aumentar el tamaño del texto */
+}
+
+.portada:hover .img-portada {
+    opacity: 0.15;
+    /* Aumentar la opacidad del fondo */
+}
+
+.content-portada h1 {
+    color: #e7e6e3;
+    margin-top: 40px;
+    font-size: 5rem;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.content-portada p {
+    font-size: 1.375rem;
+    line-height: 1.636;
+    margin-top: 10px;
+    color: #e7e6e3;
+}
+
+.eyebrow {
+    font-weight: 700;
+    font-size: .875rem;
+    line-height: 1.429;
+    letter-spacing: .12em;
+    position: relative;
+    color: #e7e6e3;
+    display: inline-block;
+    padding: 5px 15px 5px;
+    text-transform: uppercase;
+}
+
+.eyebrow span {
+    position: relative;
+}
+
+.eyebrow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #d1363a;
+}
+
+.muchotexto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-muchotexto {
+    font-size: 1.375rem;
+    line-height: 1.636;
+    color: #2b2a29;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    padding: 0px 40px;
+    max-width: 953.333px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.content-muchotexto h2 {
+    text-align: center;
+    font-size: 1.75rem;
+    line-height: 1.357;
+    margin-top: 80px;
+    font-weight: 800;
+}
+
+.content-muchotexto p {
+    margin-top: 20px;
+}
+
+.pilares {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 40px;
+    flex-wrap: wrap;
+}
+
+.content-pilares {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas */
+    gap: 40px;
+    width: 100%;
+    margin: auto 260px;
+}
+
+.content-pilares h3 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: .01em;
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+}
+
+.content-pilares p {
+    display: inline-block;
+    text-decoration: none !important;
+    font-size: 1.125rem;
+    line-height: 1.667;
+    max-width: 300px;
+    justify-items: center;
+}
+
+.pilar-edu,
+.pilar-ciud,
+.pilar-oport,
+.pilar-sost {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 0px;
+    max-width: 290px;
+}
+
+.img-educacion,
+.img-ciudadania,
+.img-oportunidades,
+.img-sostenibilidad {
+    width: 100%;
+    height: 151.73px;
+    max-width: 270px;
+    margin-bottom: 38px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-educacion {
+    background-image: url("../img/impact/Educación.jpg");
+}
+
+.img-ciudadania {
+    background-image: url("../img/impact/Ciudadanía.jpg");
+}
+
+.img-oportunidades {
+    background-image: url("../img/impact/Oportunidades.jpg");
+}
+
+.img-sostenibilidad {
+    background-image: url("../img/impact/Sostenibilidad.jpg");
+}
+
+.eyebrow-grid {
+    position: relative;
+    font-weight: 700;
+    font-size: .688rem;
+    line-height: 1.364;
+    height: 20px;
+    width: 30px;
+    color: #e7e6e3;
+    background-color: #252423;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.eyebrow-grid span {
+    display: inline-block;
+}
+
+.tittle-iniciativas {
+    font-size: 2.75em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.iniciativas {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    background-color: #e7e6e3;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carrusel-iniciativas {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centrar el contenido del carrusel */
+    align-items: center;
+}
+
+.slider-section {
+    width: calc(100% / 3);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centrar la imagen dentro del contenedor */
+    align-items: center;
+}
+
+.img-socialimpactfund,
+.img-recaudaciones,
+.img-equidadracial {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.img-socialimpactfund {
+    background-image: url("../img/impact/Social-Impact-Fund.jpg");
+}
+
+.img-recaudaciones {
+    background-image: url("../img/impact/recaudaciones.jpg");
+}
+
+.img-equidadracial {
+    background-image: url("../img/impact/EquidadRacial.jpg");
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff81;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+    background-color: #333333d4;
+    color: #fff;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+.content-slider {
+    padding: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1));
+}
+
+.content-slider h3 {
+    font-size: 4rem;
+    line-height: 1.227;
+    font-weight: 800;
+    white-space: pre-wrap;
+    position: relative;
+    margin-top: 10px;
+    color: #e7e6e3 !important;
+}
+
+.btn-slider {
+    padding-top: 20px;
+    overflow: hidden;
+    position: relative;
+    margin: -10px;
+}
+
+.btn-slider a {
+    margin: 10px;
+    z-index: 2;
+    padding: 10px 20px;
+    border: 1px solid #e7e6e3;
+    background-color: transparent;
+    color: #e7e6e3;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-slider a:hover {
+    background-color: #e7e6e3;
+    color: #000;
+}
+
+.content-slider {
+    display: none;
+    /* Oculta todos los contenidos por defecto */
+}
+
+.slider-section.active .content-slider {
+    display: block;
+    /* Muestra solo el contenido del slider activo */
+}
+
+.Premios {
+    margin-top: 100px;
+    margin-bottom: 70px;
+    font-size: 1.375rem;
+    line-height: 1.636;
+    max-width: 953.333px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Premios h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.Premios ul {
+    align-items: center;
+    display: table;
+    margin: 20px;
+}
+
+.Premios li {
+    margin-left: 25px;
+    padding-left: 20px;
+}
+
+/* Header styles */
+header {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    background-color: rgba(168, 35, 35, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+}
+
+header nav .logo .logo-svg {
+    fill: #f9f9f9;
+    display: block;
+    height: 70px;
+    width: 100px;
+    background-image: url('../img/home/riot-logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+header nav .logo .logo-svg:hover {
+    transform: scale(1.1);
+}
+
+header nav .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+header nav .nav-links li {
+    margin: 0 1rem;
+    position: relative;
+}
+
+header nav .nav-links li a {
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    color: #f9f9f9;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav .nav-links li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+}
+
+header nav .nav-links li a:hover::before {
+    transform: scaleY(1);
+}
+
+header nav .nav-links li a:hover {
+    color: #000;
+    /* Nuevo: Cambia el color del texto a negro en hover */
+}
+
+header nav .nav-links li:nth-child(1) a::before {
+    background-color: #dec66e;
+}
