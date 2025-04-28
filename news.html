@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant News | Tu portal de noticias sobre Valorant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="../hd-22016-grupo3-apf1/assets/css/news.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed">
+            <section class="container-fluid">
+                <a class="navbar-brand container-logo logo" href="/index.html"> </a>
+                <section class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="aboutUs.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="employees.html"><span class="link-2">Trabaja con
+                                    nosotros</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="news.html"><span class="link-3">Noticias</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="diversity.html"><span class="link-4">Diversidad</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="socialImpact.html"><span class="link-">Impacto</span></a>
+                        </li>
+                    </ul>
+                </section>
+                <form class="d-flex justify-content-center pe-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                    <button class="btn btn-outline-valorant" type="submit">
+                        Buscar
+                    </button>
+                </form>
+
+                <button class="navbar-toggler ms-1 p-1" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </section>
+        </nav>
+    </header>
+
+    
+
+    <!-- Carrusel de noticias destacadas -->
+    <section id="valorantCarousel" class="carousel slide sombra-bottom" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#valorantCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#valorantCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#valorantCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-image foto1"></div>
+                <div class="carousel-caption">
+                    <span class="news-tag">NUEVO AGENTE</span>
+                    <h2 class="sombra-texto">Clove: El Nuevo Controlador que Revolucionará el Meta</h2>
+                    <p class="sombra-texto">Riot Games anuncia el próximo agente que llegará al juego con habilidades nunca antes vistas</p>
+                    <a href="#" class="btn btn-valorant-outline">Leer más <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image foto2"></div>
+                <div class="carousel-caption">
+                    <span class="news-tag">ESPORTS</span>
+                    <h2 class="sombra-texto">VCT 2024: Sentinels se Corona Campeón</h2>
+                    <p class="sombra-texto">El equipo norteamericano sorprende al mundo al vencer a FNATIC en una final de infarto</p>
+                    <a href="#" class="btn btn-valorant-outline">Leer más <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-image foto3"></div>
+                <div class="carousel-caption">
+                    <span class="news-tag">ACTUALIZACIÓN</span>
+                    <h2 class="sombra-texto">Parche 7.05: Cambios Radicales en el Meta</h2>
+                    <p class="sombra-texto">Jett y Chamber reciben nerfs significativos mientras Cypher y Killjoy son potenciados</p>
+                    <a href="#" class="btn btn-valorant-outline">Leer más <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#valorantCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#valorantCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </section>
+
+    <!-- Sección de últimas noticias -->
+    <section class="latest-news py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">ÚLTIMAS NOTICIAS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8">
+                    <article class="featured-news">
+                        <div class="featured-img"></div>
+                        <div class="featured-content">
+                            <span class="news-tag">DESTACADO</span>
+                            <h3>Valorant Mobile: Primeras Imágenes Filtradas</h3>
+                            <p>Las primeras capturas de pantalla de la versión móvil de Valorant han sido filtradas, mostrando una interfaz adaptada para dispositivos táctiles y controles personalizables.</p>
+                            <div class="news-meta">
+                                <span><i class="far fa-clock"></i> 2 horas</span>
+                                <span><i class="far fa-comment"></i> 45 comentarios</span>
+                            </div>
+                            <a href="#" class="btn btn-valorant">Leer artículo completo</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-sidebar">
+                        <article class="sidebar-news">
+                            <div class="sidebar-img img-1"></div>
+                            <div class="sidebar-content">
+                                <span class="news-tag small">TORNEOS</span>
+                                <h4>Red Bull Home Ground: Fechas Confirmadas</h4>
+                                <div class="news-meta small">
+                                    <span><i class="far fa-clock"></i> 5 horas</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="sidebar-news">
+                            <div class="sidebar-img img-2"></div>
+                            <div class="sidebar-content">
+                                <span class="news-tag small">GUÍAS</span>
+                                <h4>Los Mejores Lineups de Viper en Sunset</h4>
+                                <div class="news-meta small">
+                                    <span><i class="far fa-clock"></i> 1 día</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="sidebar-news">
+                            <div class="sidebar-img img-3"></div>
+                            <div class="sidebar-content">
+                                <span class="news-tag small">COMUNIDAD</span>
+                                <h4>Riot Responde a las Quejas sobre el Sistema de Rangos</h4>
+                                <div class="news-meta small">
+                                    <span><i class="far fa-clock"></i> 2 días</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de categorías de noticias -->
+    <section class="categories-section py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">CATEGORÍAS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <article class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <h3>Agentes</h3>
+                        <p>Guías, estrategias y novedades sobre todos los agentes de Valorant.</p>
+                        <a href="#" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-map"></i>
+                        </div>
+                        <h3>Mapas</h3>
+                        <p>Estrategias, callouts y novedades sobre todos los mapas del juego.</p>
+                        <a href="#" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Esports</h3>
+                        <p>Toda la información sobre torneos, equipos y jugadores profesionales.</p>
+                        <a href="#" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="col-md-3 mb-4">
+                    <div class="category-card">
+                        <div class="category-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Actualizaciones</h3>
+                        <p>Los últimos parches, cambios y novedades oficiales del juego.</p>
+                        <a href="#" class="category-link">Explorar <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de noticias recientes con imágenes -->
+    <section class="recent-news py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">NOTICIAS RECIENTES</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <article class="col-md-4 mb-4">
+                    <div class="news-card">
+                        <div class="news-img img1">
+                            <span class="news-tag">MODO DE JUEGO</span>
+                        </div>
+                        <div class="news-card-body">
+                            <h3>Nuevo Modo de Juego Temporal: Overdrive</h3>
+                            <p>Riot Games anuncia un nuevo modo de juego frenético que estará disponible durante el próximo evento de Valorant.</p>
+                            <div class="news-meta">
+                                <span><i class="far fa-clock"></i> 3 días</span>
+                                <span><i class="far fa-eye"></i> 1.2K</span>
+                            </div>
+                            <a href="#" class="btn btn-link text-valorant">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <div class="news-card">
+                        <div class="news-img img2">
+                            <span class="news-tag">COMPETITIVO</span>
+                        </div>
+                        <div class="news-card-body">
+                            <h3>Cambios en el Sistema de Rangos para el Episodio 8</h3>
+                            <p>Próximas modificaciones en el sistema competitivo para mejorar la experiencia de juego y hacer más justas las partidas clasificatorias.</p>
+                            <div class="news-meta">
+                                <span><i class="far fa-clock"></i> 4 días</span>
+                                <span><i class="far fa-eye"></i> 3.5K</span>
+                            </div>
+                            <a href="#" class="btn btn-link text-valorant">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <div class="news-card">
+                        <div class="news-img img3">
+                            <span class="news-tag">COSMÉTICOS</span>
+                        </div>
+                        <div class="news-card-body">
+                            <h3>Nuevo Pase de Batalla: Dimensión Fracturada</h3>
+                            <p>Descubre todas las recompensas del próximo pase de batalla que llegará este mes con una temática de universos paralelos.</p>
+                            <div class="news-meta">
+                                <span><i class="far fa-clock"></i> 5 días</span>
+                                <span><i class="far fa-eye"></i> 2.8K</span>
+                            </div>
+                            <a href="#" class="btn btn-link text-valorant">Leer más <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-valorant-outline btn-lg">Ver todas las noticias</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de jugadores destacados -->
+    <section class="players-section py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">JUGADORES DESTACADOS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="player-card">
+                        <div class="player-img player1"></div>
+                        <div class="player-info">
+                            <h4>TenZ</h4>
+                            <p>Sentinels</p>
+                            <div class="player-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-twitch"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="player-card">
+                        <div class="player-img player2"></div>
+                        <div class="player-info">
+                            <h4>ScreaM</h4>
+                            <p>Team Liquid</p>
+                            <div class="player-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-twitch"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="player-card">
+                        <div class="player-img player3"></div>
+                        <div class="player-info">
+                            <h4>nAts</h4>
+                            <p>Team Liquid</p>
+                            <div class="player-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-twitch"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="player-card">
+                        <div class="player-img player4"></div>
+                        <div class="player-info">
+                            <h4>cNed</h4>
+                            <p>FUT Esports</p>
+                            <div class="player-social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-twitch"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de videos destacados -->
+    <section class="videos-section py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">VIDEOS DESTACADOS</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail thumbnail1">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Análisis Completo del Parche 7.05</h3>
+                            <p>Nuestros analistas desglosan todos los cambios del último parche y cómo afectarán al meta.</p>
+                            <div class="video-meta">
+                                <span><i class="far fa-clock"></i> 15:42</span>
+                                <span><i class="far fa-eye"></i> 125K vistas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="video-card">
+                        <div class="video-thumbnail thumbnail2">
+                            <div class="play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Top 10 Jugadas del VCT Masters 2024</h3>
+                            <p>Las mejores jugadas del último torneo internacional que dejaron a todos con la boca abierta.</p>
+                            <div class="video-meta">
+                                <span><i class="far fa-clock"></i> 12:18</span>
+                                <span><i class="far fa-eye"></i> 287K vistas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="video-card-small">
+                        <div class="video-thumbnail-small thumbnail3">
+                            <div class="play-button-small">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info-small">
+                            <h4>Guía de Clove: Habilidades y Estrategias</h4>
+                            <div class="video-meta-small">
+                                <span><i class="far fa-clock"></i> 8:24</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="video-card-small">
+                        <div class="video-thumbnail-small thumbnail4">
+                            <div class="play-button-small">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info-small">
+                            <h4>Entrevista con los Desarrolladores: Futuro de Valorant</h4>
+                            <div class="video-meta-small">
+                                <span><i class="far fa-clock"></i> 22:15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="video-card-small">
+                        <div class="video-thumbnail-small thumbnail5">
+                            <div class="play-button-small">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info-small">
+                            <h4>Tutorial: Mejora tu Aim con estos Ejercicios</h4>
+                            <div class="video-meta-small">
+                                <span><i class="far fa-clock"></i> 14:36</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de suscripción al newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2>¡No te pierdas ninguna noticia!</h2>
+                        <p>Suscríbete a nuestro newsletter y recibe las últimas novedades de Valorant directamente en tu correo.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form class="newsletter-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                                <button class="btn btn-valorant" type="submit">Suscribirse</button>
+                            </div>
+                            <div class="form-check mt-2">
+                                <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                <label class="form-check-label" for="privacyCheck">
+                                    Acepto la política de privacidad y términos de uso
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-logo"></div>
+                    <p class="footer-about">Valorant News es tu portal definitivo para mantenerte al día con todas las novedades, guías y noticias del universo de Valorant.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h4>Enlaces rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Guías</a></li>
+                        <li><a href="#">Esports</a></li>
+                        <li><a href="#">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h4>Categorías</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Agentes</a></li>
+                        <li><a href="#">Mapas</a></li>
+                        <li><a href="#">Actualizaciones</a></li>
+                        <li><a href="#">Torneos</a></li>
+                        <li><a href="#">Comunidad</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> contacto@valorantnews.com</li>
+                        <li><i class="fas fa-phone"></i> +34 912 345 678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Madrid, España</li>
+                    </ul>
+                    <p class="mt-3">¿Tienes una noticia o sugerencia? <a href="#" class="contact-link">Contáctanos</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; 2024 Valorant News. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Valorant News no está afiliado con Riot Games, Inc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de volver arriba -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../hd-22016-grupo3-apf1/assets/js/news.js"></script>
+</body>
+</html>
