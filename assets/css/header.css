@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Monaco';
+    src: url('../fonts/monaco.ttf') format('truetype'); 
+  }
+  
+  nav {
+    font-family: 'Monaco', monospace;
+    font-size: 35px;
+  }
+  a{
+    color: white !important;
+  }
+  a .logo{
+    height: 100px;
+  }
+  
+  .navbar {
+    background-color: rgb(0, 0, 0);
+    height: 90px;
+    transition: background-color 0.3s ;
+  }
+  
+  .navbar:hover {
+    background-color: rgb(16, 16, 16);
+  }
+  
+  .navbar-nav .nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .nav-item:nth-child(1):hover {
+    background: linear-gradient(45deg, #ff0000, #ff7300, #acaa2f);
+    height: 60px;
+  }
+  
+  .nav-item:nth-child(2):hover {
+    background: linear-gradient(45deg, #156915, #30c037, #30f640); 
+    height: 60px;
+  }
+  
+  .nav-item:nth-child(3):hover {
+    background: linear-gradient(45deg, #181f4e, #1a38ff, #418ff6); 
+    height: 60px;
+  }
+  
+  .nav-item:nth-child(4):hover {
+    background: linear-gradient(45deg, #892a2a, #97282c, #ff0d25); 
+    height: 60px;
+  }
+  
+  .nav-item:nth-child(5):hover {
+    background: linear-gradient(45deg, #582e6d, #9641be, #b618ff); 
+    height: 60px;
+  }
+  
+  .navbar-brand{
+    width: 13% !important;
+  }
+  
+  .logo{
+    background: url('../img/aboutUs/logo_blanco.png') no-repeat center;
+    height: 70px; 
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 50px;
+    transition: 0.4s ease-in-out 
+  }
+  
+  .logo:hover{
+    background: url('../img/aboutUs/logo_rojo.png') no-repeat center;
+    height: 70px; 
+    width: 150px;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 35px;
+    border-radius: 10px;
+    transition: background-color 0.9s ease-in-out ; 
+    height: 60px;
+  }
+  
+  .navbar-toggler {
+    color: white !important;
+    border: none !important;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-toggler:focus,
+  .btn-close:focus{
+    color: white !important;
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .navbar-toggler {
+    border: none !important;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-toggler:focus,
+  .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+  }
