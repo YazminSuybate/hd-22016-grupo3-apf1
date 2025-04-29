@@ -70,5 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         footer.classList.remove('visible');
       }
     });
+   
+    
   
   });
